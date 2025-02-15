@@ -1,0 +1,49 @@
+/* Navbarın modalın arxasında qalmaması üçün */
+.navbar {
+    z-index: 1050; /* Navbarın ön planda olması üçün */
+}
+
+/* Modalın navbarın arxasında qalmaması üçün */
+.modal {
+    z-index: 1060 !important;
+}
+
+/* Modalı tam ortada göstərmək üçün */
+.modal-dialog {
+    top: 30%;
+    transform: translateY(-50%);
+    margin: 0 auto; /* Ortaya almaq üçün */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Modalın iç məzmununu düzgün göstəriş üçün */
+.modal-content {
+    border-radius: 10px; /* Yumru künclər */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Gölgə effekti */
+}
+
+/* Modal fonunu tündləşdirmək üçün */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* 50% şəffaf qara fon */
+}
+
+/* Modalın bağlama düyməsini stilizə etmək üçün */
+.modal-header .btn-close {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+/* Modal açıldıqda saytın hərəkət etməsinə icazə ver */
+body.modal-open {
+    overflow: auto !important;
+    padding-right: 0 !important; /* Bootstrap scrollbar problemini həll edir */
+}
+
+/* Mobil uyğunluğu yaxşılaşdırmaq üçün */
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 90%;
+        top: 10%;
+        transform: none;
+    }
+}

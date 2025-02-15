@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{/layout}"
+        lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>FerecovEmlak.az | Ən Yaxşı Daşınmaz Əmlak Alqı-Satqı və Kirayəsi</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <!-- Header Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="mb-4 text-dark" style="font-size: 2.5rem; font-weight: 700;">Haqqımızda</h1>
+                <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8; color: #6c757d;">
+                    Biz, müştərilərimizin ehtiyaclarını başa düşür və onların rahatlığı üçün ən yaxşı xidmətləri təqdim etməyə çalışırıq.
+                    Yaradıcı yanaşmalar və keyfiyyətli işlərimizlə sahəmizdə liderik. Hər zaman sizə dəstək olmaq və məmnuniyyətinizi təmin etmək üçün buradayıq.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header End -->
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                        <img class="img-fluid w-100" src="img/about.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="mb-4" th:text="${about.title}">#1 Place To Find The Perfect Property</h1>
+                    <p th:text="${about.description}"></p>
+                    <a class="btn btn-primary py-3 px-5 mt-3"  th:text="${about.buttonText}"href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+</section>
+
+</body>
+</html>
