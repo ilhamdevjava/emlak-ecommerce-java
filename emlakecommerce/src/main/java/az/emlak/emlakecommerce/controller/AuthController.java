@@ -32,9 +32,9 @@ public class AuthController {
         boolean result = userService.register(registerDto);
 
         if (result) {
-            return "redirect:/?showLoginModal=true"; // Register başarılı, modal açılması için parametre ekle
+            return "redirect:/?showLoginModal=true";
         }
 
-        return "redirect:/?registerError=true"; // Hata mesajı için yönlendirme yap
+        return "redirect:/?registerError=true";
     }
 }
