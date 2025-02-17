@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# IntelliJ IDEA dosyalarını hariç tut
+.idea/
+
+# Diğer gereksiz dosyalar
+*.iml
+*.log
+node_modules/
+*.bak
+*.swp
